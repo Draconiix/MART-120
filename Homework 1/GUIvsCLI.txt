@@ -1,0 +1,7 @@
+From my quick research, this is what I have found as to the difference between GUI & CLI.
+
+GUI, also known as Graphical User interface, Is described as being information shown through visual components such as icons, buttons, and menus. GUI is used as a way to not only clean up and make navigation easier. But also shows the User what actions they can take.
+
+CUI, also known as Character User interface, was what we had before GUIs. Using sentences and text to convey information. This is also what makes CLIs, Command Line interfaces. And instead of clicking a button to go somewhere. You'd instead have to input a command for an action.
+
+So in summary, GUI is Graphical interaction Whilst CLI is Text-based interaction.
