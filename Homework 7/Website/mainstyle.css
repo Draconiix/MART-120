@@ -1,0 +1,23 @@
+.stylelinks{
+    color: rgb(217, 199, 7);
+    text-decoration-color:rgb(184, 126, 12);
+    font-family: Verdana;
+    font-style:italic;
+}
+.otherlinks{
+    color: rgb(184, 126, 12);
+    text-decoration-color: rgb(217, 199, 7);
+    font-family: Verdana;
+    font-style:italic;
+}
+#titlecolor{
+    color:darkred;
+    font-family: impact;
+    font-style:italic;
+    font-size:24px;
+}
+#Maintitle{
+    color:maroon;
+    font-family:impact;
+    font-size: 32px;
+}
