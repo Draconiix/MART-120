@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <style>
+            span{
+                color:darkred;
+                font-family: impact;
+                font-size: 24px;
+            }
+        </style>
+        <script>
+            function checkinfo()
+            {
+                var needName = document.getElementById("fName").value;
+                var needEmail = document.getElementById("email").value;
+                var checkbox = document.getElementById("yesbox").checked;
+                if(needName == "")
+                {
+                    document.getElementById("fName").style.backgroundColor = "red";
+                    document.getElementById("fName").focus();
+                    window.alert("Missing Name.");
+                }
+                else if(needEmail == "")
+                    {
+                        document.getElementById("email").style.backgroundColor = "red";
+                        document.getElementById("email").focus();
+                        window.alert("Missing Email.");
+                    }
+                else if(checkbox == false)
+                    {
+                        window.alert("ToS was not Accepted.")
+                    }
+                else
+                {
+                    document.getElementById("fName").style.backgroundColor = "green";
+                    document.getElementById("fName").focus();
+                    document.getElementById("email").style.backgroundColor = "green";
+                    document.getElementById("email").focus();
+                    window.alert("Info Submitted")
+                }
+            }
+        </script>
+    </head>
+<body style="background-color: beige;">
+    <span>Contact Me!</span>
+    <p></p>
+
+        <p style="font-family:impact; font-size:20px;">Name:<input type="text" id="fName"></p>
+        <p style="font-family:impact; font-size:20px;">Email:<input type="text" id="email"></p>
+    <span>Do you accept Terms and Services?</span>
+    <p></p>
+        <p  style="font-size: 20px; font-family: impact;"> I agree to ToS <input type="checkbox" name="Yesbox" value="yes" id="yesbox" style="width: 1.7%; height: 1.7%;"></p>
+        <p><button id="bntbutton" class="btn btn-danger" onclick='checkinfo();'>Submit</button></p>
+
+    <p><a href="homepage.html">Homepage</a>
+        | <a href="secondpage.html">Short Story</a></p>
+</body>
+
+</html>
